@@ -1,3 +1,5 @@
+#Globals
+
 alpha = [
   "A",
   "B",
@@ -26,6 +28,9 @@ alpha = [
   "Y",
   "Z",
 ]
+
+# Functions
+
 def Check_Txt (String): 
     for letter in String.upper():
         if letter not in alpha and letter != " ":
@@ -59,6 +64,8 @@ def Encrypt(Text_Array,KeyArray):
         i = i + 1
     Final_String = "".join(Output_Array)
     return Final_String
+  
+# Call Stack
 
 Input_Text = input("Please Enter Text: ")
 Input_Key = input("Pleas Enter Key: ")
