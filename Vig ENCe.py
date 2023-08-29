@@ -37,7 +37,7 @@ def Split_String_Into_Letter_Array(String):
         Output_Array.append(Letter)
     return Output_Array
     
-def Decrypt(Text_Array,KeyArray):
+def Encrypt(Text_Array,KeyArray):
     Text_Index_Int = 0
     Key_Index_Int = 0
     Final_Index_Int = 0
@@ -68,4 +68,4 @@ Check_Txt(Input_Key)
 Check_Txt(Input_Text)
 Split_Text = Split_String_Into_Letter_Array(Input_Text)
 Split_Key = Split_String_Into_Letter_Array(Input_Key)
-print("Decrpted Text: "+Decrypt(Split_Text,Split_Key))
+print("Decrpted Text: "+Encrypt(Split_Text,Split_Key))
