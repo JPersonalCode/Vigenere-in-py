@@ -50,7 +50,7 @@ def Decrypt(Text_Array,KeyArray):
         if Letter in alpha:
             Text_Index_Int = alpha.index(Letter)
             Key_Index_Int = alpha.index(KeyArray[i])
-            Final_Index_Int = Text_Index_Int - Key_Index_Int
+            Final_Index_Int = Text_Index_Int + Key_Index_Int
             while Final_Index_Int < 0:
                 Final_Index_Int = Final_Index_Int + len(alpha)
             Output_Array.append(alpha[Final_Index_Int])
